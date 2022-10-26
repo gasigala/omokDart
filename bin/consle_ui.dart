@@ -18,7 +18,7 @@ class ConsleUI {
   promptStrategy(List<dynamic> strategies) {
     stdout.write("Select one of the following straregies\n");
     for (int i = 0; i < strategies.length; i++) {
-      stdout.write('${i + 1} ${strategies[i]}');
+      stdout.write('${i + 1} ${strategies[i]}  ');
     }
 
     int strategy = 0;
