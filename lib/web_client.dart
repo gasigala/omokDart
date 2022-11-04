@@ -32,10 +32,10 @@ class WebClient {
   }
 
   getAckMove(String pidIn, var xyIn) async {
+    var url = 'https://www.cs.utep.edu/cheon/cs3360/project/omok/play/';
+    var pid = pidIn;
+    var xy = xyIn;
     try {
-      var url = 'https://www.cs.utep.edu/cheon/cs3360/project/omok/play/';
-      var pid = pidIn;
-      var xy = xyIn;
       var uri = Uri.parse('$url?pid=$pid&move=$xy');
       var response = await http.get(uri);
       var jsonResponce = StrategyParser.parseInfo(response.body);

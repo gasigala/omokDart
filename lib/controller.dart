@@ -29,6 +29,8 @@ class Controller {
     ui.printMessage(strategySelected);
     var pid = await net.getPID(strategySelected);
     ui.printMessage(pid['pid']);
+
+    //this is where most of the logic happens 
     ui.playGame(board, pid['pid']);
   }
 }

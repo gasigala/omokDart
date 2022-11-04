@@ -1,10 +1,13 @@
 import 'dart:io';
 
+/// Can be thought of as the model part of our MVC model, this holds our board representation witch is just a 
+/// list of list of strings. 
 class Board {
   final int size;
   var _positions;
-  //List <List<String>> rows;
 
+  ///Takes in the [x] and [y] cordinates that the user has inputed and makes sure they are in our 1 indexed range.
+  ///Then make sure there is not already a piece on the board but in a 0 indexed manner. 
   bool isMoveValid(var x, var y) {
     if ((x < 1 || x > size) || (y < 1 || y > size)) {
       return false;
@@ -17,6 +20,7 @@ class Board {
     return true;
   }
 
+  /// Takes in positions [x] and [y] and sets our positions list to [symbol].
   void updateBoard(var x, var y, String symbol) {
     positions[x][y] = symbol;
   }
@@ -24,7 +28,6 @@ class Board {
   //we will have the winning row be represented by a *
   void updateWinningRow(List<dynamic> row) {
     for (int i = 0; i < row.length; i += 2) {
-      //stdout.writeln('${row[i]} + ${row[i+1]}');
       updateBoard(row[i+ 1], row[i], '*');
     }
   }
