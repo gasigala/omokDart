@@ -24,7 +24,7 @@ class Board {
   //we will have the winning row be represented by a *
   void updateWinningRow(List<dynamic> row) {
     for (int i = 0; i < row.length; i += 2) {
-      stdout.writeln('${row[i]} + ${row[i+1]}');
+      //stdout.writeln('${row[i]} + ${row[i+1]}');
       updateBoard(row[i+ 1], row[i], '*');
     }
   }
