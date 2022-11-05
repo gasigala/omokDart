@@ -39,7 +39,7 @@ class ConsleUI {
               'invalid value please enter a number betwen 1 - ${strategies.length}');
         }
       } catch (_) {
-        stdout.write('invalid value');
+        stdout.writeln('invalid value');
       }
     }
     return strategies[strategy - 1];
@@ -121,7 +121,7 @@ class ConsleUI {
         //update the board
         board.updateBoard(ackMove['y'], ackMove['x'], 'X');
         if (move.length == 5) {
-          board.updateBoard(move['y'], move['x'], 'O');
+          board.updateBoard(move['y'], move['x'], '#');
         }
         //get the winning row
         var row = board.getWinningRow(ackMove['row'], move['row']);
@@ -135,7 +135,7 @@ class ConsleUI {
         //ack move is the move that we just made
         //will be y,x since thats our row & col
         board.updateBoard(ackMove['y'], ackMove['x'], 'X');
-        board.updateBoard(move['y'], move['x'], 'O');
+        board.updateBoard(move['y'], move['x'], '#');
       }
     }
   }

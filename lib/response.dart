@@ -1,3 +1,4 @@
+/// Class that takes in maps from JSON responce and determines whether the game has finished
 class Response {
   Response();
 

@@ -3,6 +3,8 @@ import 'web_client.dart';
 import 'info.dart';
 import 'board.dart';
 
+///Is the controller part of the MVC model uses [ConsleUI] class 
+///to interact with the user as well as the [WebClient] class to fetch json responses and start the game. 
 class Controller {
   Future<void> start() async {
     var ui = ConsleUI();

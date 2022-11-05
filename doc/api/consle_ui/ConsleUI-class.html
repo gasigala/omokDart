@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the ConsleUI class from the consle_ui library, for the Dart programming language.">
+  <title>ConsleUI class - consle_ui library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../" data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">strategy</a></li>
+    <li><a href="../consle_ui/consle_ui-library.html">consle_ui</a></li>
+    <li class="self-crumb">ConsleUI class</li>
+  </ol>
+  <div class="self-name">ConsleUI</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-class">ConsleUI</span> class 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>This could be seen as the view part of the MVC model. This will call any methods that either require input or
+produce an output in the terminal that the user needs to play the game.</p>
+</section>
+
+
+
+    
+  <section class="summary offset-anchor" id="constructors">
+    <h2>Constructors</h2>
+
+    <dl class="constructor-summary-list">
+        <dt id="ConsleUI" class="callable">
+          <span class="name"><a href="../consle_ui/ConsleUI/ConsleUI.html">ConsleUI</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          
+        </dd>
+    </dl>
+  </section>
+
+    <section class="summary offset-anchor inherited" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/2.18.3/dart-core/Object/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.dart.dev/stable/2.18.3/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object.
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/2.18.3/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.dart.dev/stable/2.18.3/dart-core/Type-class.html">Type</a></span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object.
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    
+  <section
+      class="summary offset-anchor"
+      id="instance-methods">
+    <h2>Methods</h2>
+    <dl class="callables">
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/2.18.3/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.18.3/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a non-existent method or property is accessed.
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="playGame" class="callable">
+  <span class="name"><a href="../consle_ui/ConsleUI/playGame.html">playGame</a></span><span class="signature">(<wbr><span class="parameter" id="playGame-param-board"><span class="type-annotation"><a href="../board/Board-class.html">Board</a></span> <span class="parameter-name">board</span>, </span><span class="parameter" id="playGame-param-pid"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.18.3/dart-core/String-class.html">String</a></span> <span class="parameter-name">pid</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Takes in a <a href="../board/Board-class.html">Board</a> instanse as well as a String <code>pid</code>
+This will prompt the user to make a move and if valid, will check for a winner
+and also update the board accordingly.
+The main logic comes from getting the json reponse ack_move and move into their own map that we can acess
+if there is a winner
+  
+
+</dd>
+
+        <dt id="printMessage" class="callable">
+  <span class="name"><a href="../consle_ui/ConsleUI/printMessage.html">printMessage</a></span><span class="signature">(<wbr><span class="parameter" id="printMessage-param-msg"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.18.3/dart-core/String-class.html">String</a></span> <span class="parameter-name">msg</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  
+  
+
+</dd>
+
+        <dt id="promptMove" class="callable">
+  <span class="name"><a href="../consle_ui/ConsleUI/promptMove.html">promptMove</a></span><span class="signature">(<wbr><span class="parameter" id="promptMove-param-board"><span class="type-annotation"><a href="../board/Board-class.html">Board</a></span> <span class="parameter-name">board</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Takes in a instance of <code>board</code> and displays it. Then asks the user for input. It will check the length of the input
+then try to convert it into an int and make sure the move is valid and the space is not already being used.
+If these conditions are not meet it will promt the user to enter a move again.
+  
+
+</dd>
+
+        <dt id="promptServer" class="callable">
+  <span class="name"><a href="../consle_ui/ConsleUI/promptServer.html">promptServer</a></span><span class="signature">(<wbr><span class="parameter" id="promptServer-param-serverUrl">[<span class="type-annotation">dynamic</span> <span class="parameter-name">serverUrl</span> = <span class="default-value">WebClient.defaultServer</span>]</span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Takes in a default <code>serverUrl</code> and lets the user specify one if they would like.
+  
+
+</dd>
+
+        <dt id="promptStrategy" class="callable">
+  <span class="name"><a href="../consle_ui/ConsleUI/promptStrategy.html">promptStrategy</a></span><span class="signature">(<wbr><span class="parameter" id="promptStrategy-param-strategies"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.18.3/dart-core/List-class.html">List</a></span> <span class="parameter-name">strategies</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Takes in a <a href="https://api.dart.dev/stable/2.18.3/dart-core/List-class.html">List</a> of strategies then interates through them and asked the user to select one.
+  
+
+</dd>
+
+        <dt id="showBoard" class="callable">
+  <span class="name"><a href="../consle_ui/ConsleUI/showBoard.html">showBoard</a></span><span class="signature">(<wbr><span class="parameter" id="showBoard-param-positions"><span class="type-annotation">dynamic</span> <span class="parameter-name">positions</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Takes in the List <code>positions</code> and will then generate the indexes and display them.
+  
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/2.18.3/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/2.18.3/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A string representation of this object.
+  <div class="features">inherited</div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="operators">
+    <h2>Operators</h2>
+    <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/2.18.3/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.18.3/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/2.18.3/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator.
+  <div class="features">inherited</div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+    
+    
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">strategy</a></li>
+  <li><a href="../consle_ui/consle_ui-library.html">consle_ui</a></li>
+  <li class="self-crumb">ConsleUI class</li>
+</ol>
+
+
+    <h5>consle_ui library</h5>
+    <ol>
+  <li class="section-title"><a href="../consle_ui/consle_ui-library.html#classes">Classes</a></li>
+  <li><a href="../consle_ui/ConsleUI-class.html">ConsleUI</a></li>
+
+
+
+
+
+
+
+
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <ol>
+
+        <li class="section-title"><a href="../consle_ui/ConsleUI-class.html#constructors">Constructors</a></li>
+          <li><a href="../consle_ui/ConsleUI/ConsleUI.html">ConsleUI</a></li>
+
+
+    <li class="section-title inherited">
+      <a href="../consle_ui/ConsleUI-class.html#instance-properties">Properties</a>
+    </li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.18.3/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.18.3/dart-core/Object/runtimeType.html">runtimeType</a></li>
+
+    <li class="section-title"><a href="../consle_ui/ConsleUI-class.html#instance-methods">Methods</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.18.3/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li><a href="../consle_ui/ConsleUI/playGame.html">playGame</a></li>
+    <li><a href="../consle_ui/ConsleUI/printMessage.html">printMessage</a></li>
+    <li><a href="../consle_ui/ConsleUI/promptMove.html">promptMove</a></li>
+    <li><a href="../consle_ui/ConsleUI/promptServer.html">promptServer</a></li>
+    <li><a href="../consle_ui/ConsleUI/promptStrategy.html">promptStrategy</a></li>
+    <li><a href="../consle_ui/ConsleUI/showBoard.html">showBoard</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.18.3/dart-core/Object/toString.html">toString</a></li>
+
+    <li class="section-title inherited"><a href="../consle_ui/ConsleUI-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.18.3/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    strategy
+      1.0.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+
